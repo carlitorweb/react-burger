@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @screen md {
+    .Modal {
+      width: 500px;
+      left: calc(50% - 250px);
+    }
+  }
+
+  @media (max-width: 639px) {
+    .desktopOnly {
+      display: none;
+    }
+  }
+}
